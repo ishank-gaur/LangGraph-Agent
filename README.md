@@ -21,18 +21,21 @@ A conversational chatbot built with **LangGraph** and **Azure OpenAI** that:
 
 ## 📂 Project Structure
 .
-├── langgraph_bot.py       # Chatbot entry point (LangGraph workflow)
-├── fetch.py               # Tool search & summarization logic
-├── requirements.txt       # Python dependencies
-├── .env                   # Environment variables (not committed to repo)
-└── ai_tools_weekly_digest.txt  # Last generated digest (local save)
+├── langgraph_bot.py   
+    
+├── fetch.py 
+             
+├── requirements.txt 
+    
+├── .env
+                   
+└── ai_tools_weekly_digest.txt
 
 ---
 
 ## ⚙️ Setup
 
 ### 1. Clone the repository
-```bash
 git clone https://github.com/yourusername/ai-tools-chatbot.git
 cd ai-tools-chatbot
 
@@ -60,6 +63,7 @@ Go to More Options (⋯) → Connectors.
 Search for Incoming Webhook and configure it.
 Copy the webhook URL and paste it into .env as TEAMS_WEBHOOK_URL.
 
+---
 ## 🚀 Usage
 
 ### Start the chatbot
@@ -73,6 +77,7 @@ Bot: Neil Armstrong, on July 20, 1969, during Apollo 11.
 You: send the new tools to the team
 Bot: ✅ I've sent the latest AI tools digest to your Microsoft Teams!
 
+---
 ## 🛠 How It Works
 
 LangGraph manages the conversation state.
@@ -83,6 +88,7 @@ Downloads and parses each article using newspaper3k.
 Summarizes via GPT in structured format.
 Sends result to Microsoft Teams webhook.
 
+---
 ## 📦 Requirements
 
 Python 3.9+
